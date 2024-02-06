@@ -1,5 +1,13 @@
 const mongoose = require('mongoose');
-const studentsSchema = require('./studentsSchema');
+
+const studentsSchema = mongoose.Schema({
+    Name: String,
+    Roll: String,
+    DOB: String,
+    Age: Number
+
+
+});
 
 const Student = mongoose.model("Student", studentsSchema);
 
